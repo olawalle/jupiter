@@ -1,38 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+a {
+  color: #808080;
+  text-decoration: none;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  font-family: "Rubik", sans-serif;
+}
+.main-content {
+  width: calc(100% - 350px);
+}
+.cart-wrap {
+  min-width: 350px;
+  width: 350px;
+  border-left: 1px solid rgba(215, 215, 215, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+/* helpers */
+.w-100 {
+  width: 100%;
+}
+
+/* buttons */
+button {
+  cursor: pointer;
+}
+.main-btn {
+  border: 0;
+  background: #ec6661;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  height: 32px;
+  padding: 0 10px;
+}
+.sec-btn {
+  border: 1px solid #d7d7d7;
+  background: transparent;
+  color: #38c2de;
+  font-size: 14px;
+  height: 32px;
+  padding: 0 10px;
+}
+.pri-btn {
+  border: 1px solid #38c2de;
+  background: #38c2de;
+  color: #fff;
+  font-size: 14px;
+  height: 32px;
+  padding: 0 10px;
 }

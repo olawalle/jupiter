@@ -1,0 +1,41 @@
+.home-page {
+  padding: 40px 100px;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+  .categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .category {
+      border: 1px solid #e1e1e1;
+      border-radius: 40px;
+      padding: 7px 12px;
+      margin: 0 10px 0 0;
+      font-size: 14px;
+      color: #222222;
+      margin-bottom: 10px;
+      cursor: pointer;
+      &.picked {
+        background-color: #222222;
+        color: #e1e1e1;
+      }
+    }
+    .circle {
+      border: 1px solid #e1e1e1;
+      border-radius: 50%;
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .shopping-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+  }
+}
